@@ -1,0 +1,2842 @@
+{
+	"info": {
+		"_postman_id": "c9694aeb-e06c-4057-9427-ef62535bf386",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19249636"
+	},
+	"item": [
+		{
+			"name": "References [Справочники]",
+			"item": [
+				{
+					"name": "All",
+					"item": [
+						{
+							"name": "List all [ Весь список]",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/references",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[200] List all [Весь список]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/references",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 28 Nov 2023 07:14:45 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"city\": [\n        {\n            \"id\": 1,\n            \"name\": \"Город 0\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Город 1\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Город 2\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Город 3\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Город 4\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Город 5\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Город 6\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Город 7\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Город 8\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Город 9\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Город 10\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Город 11\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Город 12\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Город 13\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Город 14\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Город 15\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Город 16\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Город 17\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Город 18\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Город 19\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Addiehaven\",\n            \"deleted\": null\n        }\n    ],\n    \"storage\": [\n        {\n            \"name\": \"Склад 0\",\n            \"city\": {\n                \"id\": 7,\n                \"name\": \"Город 6\",\n                \"deleted\": null\n            },\n            \"id\": 1,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 1\",\n            \"city\": {\n                \"id\": 10,\n                \"name\": \"Город 9\",\n                \"deleted\": null\n            },\n            \"id\": 2,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 2\",\n            \"city\": {\n                \"id\": 10,\n                \"name\": \"Город 9\",\n                \"deleted\": null\n            },\n            \"id\": 3,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 3\",\n            \"city\": {\n                \"id\": 14,\n                \"name\": \"Город 13\",\n                \"deleted\": null\n            },\n            \"id\": 4,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 4\",\n            \"city\": {\n                \"id\": 8,\n                \"name\": \"Город 7\",\n                \"deleted\": null\n            },\n            \"id\": 5,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 5\",\n            \"city\": {\n                \"id\": 10,\n                \"name\": \"Город 9\",\n                \"deleted\": null\n            },\n            \"id\": 6,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 6\",\n            \"city\": {\n                \"id\": 13,\n                \"name\": \"Город 12\",\n                \"deleted\": null\n            },\n            \"id\": 7,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 7\",\n            \"city\": {\n                \"id\": 9,\n                \"name\": \"Город 8\",\n                \"deleted\": null\n            },\n            \"id\": 8,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 8\",\n            \"city\": {\n                \"id\": 15,\n                \"name\": \"Город 14\",\n                \"deleted\": null\n            },\n            \"id\": 9,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 9\",\n            \"city\": {\n                \"id\": 8,\n                \"name\": \"Город 7\",\n                \"deleted\": null\n            },\n            \"id\": 10,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 10\",\n            \"city\": {\n                \"id\": 2,\n                \"name\": \"Город 1\",\n                \"deleted\": null\n            },\n            \"id\": 11,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 11\",\n            \"city\": {\n                \"id\": 6,\n                \"name\": \"Город 5\",\n                \"deleted\": null\n            },\n            \"id\": 12,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 12\",\n            \"city\": {\n                \"id\": 11,\n                \"name\": \"Город 10\",\n                \"deleted\": null\n            },\n            \"id\": 13,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 13\",\n            \"city\": {\n                \"id\": 14,\n                \"name\": \"Город 13\",\n                \"deleted\": null\n            },\n            \"id\": 14,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 14\",\n            \"city\": {\n                \"id\": 20,\n                \"name\": \"Город 19\",\n                \"deleted\": null\n            },\n            \"id\": 15,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 15\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Город 2\",\n                \"deleted\": null\n            },\n            \"id\": 16,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 16\",\n            \"city\": {\n                \"id\": 4,\n                \"name\": \"Город 3\",\n                \"deleted\": null\n            },\n            \"id\": 17,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 17\",\n            \"city\": {\n                \"id\": 2,\n                \"name\": \"Город 1\",\n                \"deleted\": null\n            },\n            \"id\": 18,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 18\",\n            \"city\": {\n                \"id\": 14,\n                \"name\": \"Город 13\",\n                \"deleted\": null\n            },\n            \"id\": 19,\n            \"deleted\": null\n        },\n        {\n            \"name\": \"Склад 19\",\n            \"city\": {\n                \"id\": 13,\n                \"name\": \"Город 12\",\n                \"deleted\": null\n            },\n            \"id\": 20,\n            \"deleted\": null\n        }\n    ],\n    \"order-status\": [\n        {\n            \"id\": 1,\n            \"name\": \"Ожидает обработки\",\n            \"alias\": \"waiting-to-be-processed\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Ожидает отправки\",\n            \"alias\": \"waiting-to-be-sent\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Отправлено\",\n            \"alias\": \"dispatched\",\n            \"deleted\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Выдано клиенту\",\n            \"alias\": \"issued-to-customer\",\n            \"deleted\": null\n        }\n    ]\n}"
+								}
+							]
+						}
+					],
+					"description": "Все справочники"
+				},
+				{
+					"name": "City [Город]",
+					"item": [
+						{
+							"name": "List [Список]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/references/city?page[number]=1&page[size]=10&sort[property]=name&sort[order]=asc",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references",
+										"city"
+									],
+									"query": [
+										{
+											"key": "page[number]",
+											"value": "1",
+											"description": "Номер страницы ( от 1 )"
+										},
+										{
+											"key": "page[size]",
+											"value": "10",
+											"description": "Количество страниц (от 1 до 50)"
+										},
+										{
+											"key": "sort[property]",
+											"value": "name",
+											"description": "Сортировка. Подробности в документации."
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc",
+											"description": "Порядок сортировки. [asc, desc, ASC, DESC]"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1",
+											"description": "ID",
+											"disabled": true
+										},
+										{
+											"key": "filter[name]",
+											"value": "",
+											"description": "Name",
+											"disabled": true
+										}
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] List [Список]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/references/city",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 16 Nov 2023 14:56:01 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Город 0\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Город 1\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Город 2\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Город 3\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Город 4\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Город 5\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Город 6\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Город 7\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Город 8\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Город 9\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Город 10\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Город 11\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Город 12\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Город 13\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Город 14\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Город 15\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Город 16\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Город 17\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Город 18\",\n        \"deleted\": false\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Город 19\",\n        \"deleted\": false\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "Create [Создание]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomCity}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/references/city",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references",
+										"city"
+									]
+								},
+								"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Create [Создание]",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"{{$randomCity}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/references/city",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Nov 2023 11:06:25 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 21,\n    \"name\": \"West Rylee\",\n    \"deleted\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "Read [Чтение]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/references/city/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references",
+										"city",
+										"1"
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] Read [Чтение]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/references/city/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 16 Nov 2023 14:55:47 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"name\": \"Город 0\",\n    \"deleted\": false\n}"
+								},
+								{
+									"name": "[400] Read [Чтение]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/references/city/10000",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city",
+												"10000"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 16 Nov 2023 14:55:02 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 400,\n    \"code\": 0,\n    \"message\": \"Bad request\",\n    \"details\": {\n        \"city\": \"Город c ID=10000 не найден\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update [Модификация]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful PUT request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomCity}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/references/city/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references",
+										"city",
+										"1"
+									]
+								},
+								"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Update [Модификация]",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"name\": \"{{$randomCity}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/references/city/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Nov 2023 11:10:09 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"name\": \"Owensboro\",\n    \"deleted\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete [Удаление]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful DELETE request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/references/city/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references",
+										"city",
+										"1"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[204] Delete [Удаление]",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/references/city/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city",
+												"1"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Nov 2023 11:10:30 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Restore [Восстановление]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Restore successful\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/references/city/1/restore",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"references",
+										"city",
+										"1",
+										"restore"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[204] Restore [Восстановление]",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/references/city/1/restore",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"references",
+												"city",
+												"1",
+												"restore"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 24 Nov 2023 11:10:52 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sections [Разделы]",
+			"item": [
+				{
+					"name": "Order [Заявки]",
+					"item": [
+						{
+							"name": "List [Список]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/order/list?page[number]=1&page[size]=10&sort[property]=date&sort[order]=asc",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"order",
+										"list"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "all",
+											"description": "Режим [default, all,onlyTotal]. Подробности в документации.",
+											"disabled": true
+										},
+										{
+											"key": "page[number]",
+											"value": "1",
+											"description": "Номер страницы ( от 1 )"
+										},
+										{
+											"key": "page[size]",
+											"value": "10",
+											"description": "Количество страниц (от 1 до 50)"
+										},
+										{
+											"key": "sort[property]",
+											"value": "date",
+											"description": "Сортировка. Подробности в документации."
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc",
+											"description": "Порядок сортировки. [asc, desc, ASC, DESC]"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1",
+											"description": "ID",
+											"disabled": true
+										}
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": []
+						},
+						{
+							"name": "Create [Создание]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customerId\": 1,\n    \"statusId\": 1,\n    // \"tk\": \"{{$randomLoremWord}}\",\n    \"cityId\": 1,\n    // \"deliveryPrice\": {{$randomPrice}},\n    \"products\": [\n        {\n            \"productId\": 1,\n            \"productQuantity\": \"{{$randomInt}}\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/order",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"order"
+									]
+								},
+								"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Create [Создание]",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customerId\": 1,\n    \"statusId\": 1,\n    \"tk\": \"{{$randomLoremWord}}\",\n    \"cityId\": 1,\n    \"deliveryPrice\": 50.55,\n    \"products\": [\n        {\n            \"productId\": 1,\n            \"productQuantity\": \"{{$randomInt}}\"\n        }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/order",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"order"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 28 Nov 2023 07:25:06 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"customer\": {\n        \"name\": \"Davis\",\n        \"phone\": \"89-380-257-3820\",\n        \"email\": \"Libby8@example.org\",\n        \"city\": {\n            \"deleted\": null,\n            \"id\": 1,\n            \"name\": \"Город 0\"\n        },\n        \"street\": \"Carolyn Stravenue\",\n        \"houseNumber\": \"1\",\n        \"apartmentNumber\": null,\n        \"id\": 1,\n        \"dateCreate\": \"2023-11-27T14:57:29+03:00\",\n        \"dateUpdate\": null,\n        \"deleted\": null\n    },\n    \"date\": \"2023-11-28T10:25:06+03:00\",\n    \"status\": {\n        \"id\": 1,\n        \"name\": \"Ожидает обработки\",\n        \"alias\": \"waiting-to-be-processed\",\n        \"deleted\": null\n    },\n    \"tk\": \"et\",\n    \"deliveryPrice\": 50.55,\n    \"products\": [\n        {\n            \"productQuantity\": 490\n        }\n    ],\n    \"id\": 1,\n    \"dateCreate\": \"2023-11-28T10:25:06+03:00\",\n    \"dateUpdate\": null,\n    \"deleted\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Read [Чтение]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/order/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"order",
+										"1"
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] Read [Чтение]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/order/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"order",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 28 Nov 2023 07:25:59 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"customer\": {\n        \"email\": \"Libby8@example.org\",\n        \"city\": {\n            \"deleted\": null,\n            \"id\": 1,\n            \"name\": \"Город 0\"\n        },\n        \"street\": \"Carolyn Stravenue\",\n        \"houseNumber\": \"1\",\n        \"apartmentNumber\": null,\n        \"dateCreate\": \"2023-11-27T14:57:29+03:00\",\n        \"dateUpdate\": null,\n        \"deleted\": null,\n        \"name\": \"Davis\",\n        \"phone\": \"89-380-257-3820\",\n        \"id\": 1\n    },\n    \"date\": \"2023-11-28T00:00:00+03:00\",\n    \"status\": {\n        \"deleted\": null,\n        \"id\": 1,\n        \"name\": \"Ожидает обработки\",\n        \"alias\": \"waiting-to-be-processed\"\n    },\n    \"tk\": \"et\",\n    \"deliveryPrice\": 51,\n    \"products\": [\n        {\n            \"productQuantity\": 490\n        }\n    ],\n    \"id\": 1,\n    \"dateCreate\": \"2023-11-28T10:25:06+03:00\",\n    \"dateUpdate\": null,\n    \"deleted\": null\n}"
+								},
+								{
+									"name": "[400] Read [Чтение]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/order/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"order",
+												"1"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 28 Nov 2023 07:24:14 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 400,\n    \"code\": 0,\n    \"message\": \"Bad request\",\n    \"details\": {\n        \"order\": \"Объект \\\"Заявка\\\" c ID=1 не найден\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Change status [Смена статуса]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Restore successful\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/order/1/status/dispatched",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"order",
+										"1",
+										"status",
+										"dispatched"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer [Клиенты]",
+					"item": [
+						{
+							"name": "List [Список]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/customer/list?page[number]=1&page[size]=10&sort[property]=name&sort[order]=asc",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"customer",
+										"list"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "all",
+											"description": "Режим [default, all,onlyTotal]. Подробности в документации.",
+											"disabled": true
+										},
+										{
+											"key": "page[number]",
+											"value": "1",
+											"description": "Номер страницы ( от 1 )"
+										},
+										{
+											"key": "page[size]",
+											"value": "10",
+											"description": "Количество страниц (от 1 до 50)"
+										},
+										{
+											"key": "sort[property]",
+											"value": "name",
+											"description": "Сортировка. Подробности в документации."
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc",
+											"description": "Порядок сортировки. [asc, desc, ASC, DESC]"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1",
+											"description": "ID",
+											"disabled": true
+										},
+										{
+											"key": "filter[name]",
+											"value": "",
+											"description": "ФИО",
+											"disabled": true
+										},
+										{
+											"key": "filter[phone]",
+											"value": "",
+											"description": "Номер телефона",
+											"disabled": true
+										},
+										{
+											"key": "filter[email]",
+											"value": "1",
+											"description": "Email",
+											"disabled": true
+										}
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] List [Список] - EMPTY",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/customer/list?page[number]=1&page[size]=10&sort[property]=name&sort[order]=asc",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"customer",
+												"list"
+											],
+											"query": [
+												{
+													"key": "mode",
+													"value": "all",
+													"description": "Режим [default, all,onlyTotal]. Подробности в документации.",
+													"disabled": true
+												},
+												{
+													"key": "page[number]",
+													"value": "1",
+													"description": "Номер страницы ( от 1 )"
+												},
+												{
+													"key": "page[size]",
+													"value": "10",
+													"description": "Количество страниц (от 1 до 50)"
+												},
+												{
+													"key": "sort[property]",
+													"value": "name",
+													"description": "Сортировка. Подробности в документации."
+												},
+												{
+													"key": "sort[order]",
+													"value": "asc",
+													"description": "Порядок сортировки. [asc, desc, ASC, DESC]"
+												},
+												{
+													"key": "filter[id]",
+													"value": "1",
+													"description": "ID",
+													"disabled": true
+												},
+												{
+													"key": "filter[name]",
+													"value": "",
+													"description": "ФИО",
+													"disabled": true
+												},
+												{
+													"key": "filter[phone]",
+													"value": "",
+													"description": "Номер телефона",
+													"disabled": true
+												},
+												{
+													"key": "filter[email]",
+													"value": "1",
+													"description": "Email",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Nov 2023 14:54:03 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"paginator\": {\n        \"first\": 0,\n        \"last\": 0,\n        \"total\": 0,\n        \"pageNumber\": 1,\n        \"pageSize\": 10\n    },\n    \"data\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "Create [Создание]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomLastName}}\",\n    \"phone\": \"{{$randomPhoneNumberExt}}\",\n    \"email\": \"{{$randomExampleEmail}}\",\n    \"cityId\": 1,\n    \"street\": \"{{$randomStreetName}}\",\n    \"houseNumber\": \"1\",\n    \"apartmentNumber\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/customer",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"customer"
+									]
+								},
+								"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Create [Создание]",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"{{$randomLastName}}\",\n    \"phone\": \"{{$randomPhoneNumberExt}}\",\n    \"email\": \"{{$randomExampleEmail}}\",\n    \"cityId\": 1,\n    \"street\": \"{{$randomStreetName}}\",\n    \"houseNumber\": \"1\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/customer",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"customer"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Nov 2023 15:33:04 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Kuvalis\",\n    \"phone\": \"20-450-886-9019\",\n    \"email\": \"Laila60@example.net\",\n    \"city\": {\n        \"id\": 1,\n        \"name\": \"Город 0\",\n        \"deleted\": false\n    },\n    \"street\": \"Johnny Loop\",\n    \"houseNumber\": \"1\",\n    \"apartmentNumber\": null,\n    \"id\": 1,\n    \"dateCreate\": \"2023-11-26T18:33:04+03:00\",\n    \"dateUpdate\": null,\n    \"deleted\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "Read [Чтение]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/customer/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"customer",
+										"1"
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] Read [Чтение]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/customer/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"customer",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Nov 2023 15:34:38 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Kuvalis\",\n    \"phone\": \"20-450-886-9019\",\n    \"email\": \"Laila60@example.net\",\n    \"city\": {\n        \"deleted\": false,\n        \"id\": 1,\n        \"name\": \"Город 0\"\n    },\n    \"street\": \"Johnny Loop\",\n    \"houseNumber\": \"1\",\n    \"apartmentNumber\": null,\n    \"id\": 1,\n    \"dateCreate\": \"2023-11-26T18:33:04+03:00\",\n    \"dateUpdate\": null,\n    \"deleted\": false\n}"
+								}
+							]
+						},
+						{
+							"name": "Update [Модификация]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful PUT request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomLastName}}\",\n    \"phone\": \"{{$randomPhoneNumberExt}}\",\n    \"email\": \"{{$randomExampleEmail}}\",\n    \"cityId\": 2,\n    \"street\": \"{{$randomStreetName}}\",\n    \"houseNumber\": \"{{$randomInt}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/customer/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"customer",
+										"1"
+									]
+								},
+								"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Update [Модификация]",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"{{$randomLastName}}\",\n    \"phone\": \"{{$randomPhoneNumberExt}}\",\n    \"email\": \"{{$randomExampleEmail}}\",\n    \"cityId\": 2,\n    \"street\": \"{{$randomStreetName}}\",\n    \"houseNumber\": \"{{$randomInt}}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/customer/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"customer",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:06:14 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Goldner\",\n    \"phone\": \"66-728-431-5329\",\n    \"email\": \"Wyman64@example.com\",\n    \"city\": {\n        \"id\": 2,\n        \"name\": \"Город 1\",\n        \"deleted\": null\n    },\n    \"street\": \"Dedrick Ports\",\n    \"houseNumber\": \"980\",\n    \"apartmentNumber\": null,\n    \"id\": 2,\n    \"dateCreate\": \"2023-11-27T15:06:14+03:00\",\n    \"dateUpdate\": \"2023-11-27T15:06:14+03:00\",\n    \"deleted\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete [Удаление]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful DELETE request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/customer/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"customer",
+										"1"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[204] Delete [Удаление]",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/customer/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"customer",
+												"1"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 26 Nov 2023 16:28:03 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Restore [Восстановление]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Restore successful\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/customer/1/restore",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"customer",
+										"1",
+										"restore"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Restore [Восстановление]",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/customer/1/restore",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"customer",
+												"1",
+												"restore"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:17:28 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Product [Товар]",
+					"item": [
+						{
+							"name": "List [Список]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/product/list?page[number]=1&page[size]=10&sort[property]=name&sort[order]=asc",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"product",
+										"list"
+									],
+									"query": [
+										{
+											"key": "mode",
+											"value": "all",
+											"description": "Режим [default, all,onlyTotal]. Подробности в документации.",
+											"disabled": true
+										},
+										{
+											"key": "page[number]",
+											"value": "1",
+											"description": "Номер страницы ( от 1 )"
+										},
+										{
+											"key": "page[size]",
+											"value": "10",
+											"description": "Количество страниц (от 1 до 50)"
+										},
+										{
+											"key": "sort[property]",
+											"value": "name",
+											"description": "Сортировка. Подробности в документации."
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc",
+											"description": "Порядок сортировки. [asc, desc, ASC, DESC]"
+										},
+										{
+											"key": "filter[id]",
+											"value": "1",
+											"description": "ID",
+											"disabled": true
+										},
+										{
+											"key": "filter[name]",
+											"value": "",
+											"description": "Название",
+											"disabled": true
+										},
+										{
+											"key": "filter[price]",
+											"value": "",
+											"description": "Цена",
+											"disabled": true
+										},
+										{
+											"key": "filter[quantityAvailableForOrder]",
+											"value": "1",
+											"description": "Кол-во доступное для заказа",
+											"disabled": true
+										},
+										{
+											"key": "filter[storage]",
+											"value": "",
+											"description": "Склад",
+											"disabled": true
+										}
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] List [Список]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/product/list?page[number]=1&page[size]=10&sort[property]=name&sort[order]=asc",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"product",
+												"list"
+											],
+											"query": [
+												{
+													"key": "mode",
+													"value": "all",
+													"description": "Режим [default, all,onlyTotal]. Подробности в документации.",
+													"disabled": true
+												},
+												{
+													"key": "page[number]",
+													"value": "1",
+													"description": "Номер страницы ( от 1 )"
+												},
+												{
+													"key": "page[size]",
+													"value": "10",
+													"description": "Количество страниц (от 1 до 50)"
+												},
+												{
+													"key": "sort[property]",
+													"value": "name",
+													"description": "Сортировка. Подробности в документации."
+												},
+												{
+													"key": "sort[order]",
+													"value": "asc",
+													"description": "Порядок сортировки. [asc, desc, ASC, DESC]"
+												},
+												{
+													"key": "filter[id]",
+													"value": "1",
+													"description": "ID",
+													"disabled": true
+												},
+												{
+													"key": "filter[name]",
+													"value": "",
+													"description": "Название",
+													"disabled": true
+												},
+												{
+													"key": "filter[price]",
+													"value": "",
+													"description": "Цена",
+													"disabled": true
+												},
+												{
+													"key": "filter[quantityAvailableForOrder]",
+													"value": "1",
+													"description": "Кол-во доступное для заказа",
+													"disabled": true
+												},
+												{
+													"key": "filter[storage]",
+													"value": "",
+													"description": "Склад",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:04:18 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"paginator\": {\n        \"first\": 0,\n        \"last\": 0,\n        \"total\": 1,\n        \"pageNumber\": 1,\n        \"pageSize\": 10\n    },\n    \"data\": [\n        {\n            \"name\": \"Ball\",\n            \"price\": 700,\n            \"quantityAvailableForOrder\": 54,\n            \"storage\": {\n                \"city\": {\n                    \"deleted\": null,\n                    \"id\": 7,\n                    \"name\": \"Город 6\"\n                },\n                \"deleted\": null,\n                \"name\": \"Склад 0\",\n                \"id\": 1\n            },\n            \"id\": 1,\n            \"dateCreate\": \"2023-11-27T15:04:11+03:00\",\n            \"dateUpdate\": null,\n            \"deleted\": null\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Create [Создание]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomProduct}}\",\n    \"price\": {{$randomPrice}},\n    \"quantityAvailableForOrder\": \"{{$randomInt}}\",\n    \"storageId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/product",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"product"
+									]
+								},
+								"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Create [Создание]",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"{{$randomProduct}}\",\n    \"price\": {{$randomPrice}},\n    \"quantityAvailableForOrder\": \"{{$randomInt}}\",\n    \"storageId\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/product",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"product"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:04:11 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Ball\",\n    \"price\": 699.97,\n    \"quantityAvailableForOrder\": 54,\n    \"storage\": {\n        \"name\": \"Склад 0\",\n        \"city\": {\n            \"deleted\": null,\n            \"id\": 7,\n            \"name\": \"Город 6\"\n        },\n        \"id\": 1,\n        \"deleted\": null\n    },\n    \"id\": 1,\n    \"dateCreate\": \"2023-11-27T15:04:11+03:00\",\n    \"dateUpdate\": null,\n    \"deleted\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Read [Чтение]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/product/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"product",
+										"1"
+									]
+								},
+								"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+							},
+							"response": [
+								{
+									"name": "[200] Read [Чтение]",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/product/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"product",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:05:31 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Ball\",\n    \"price\": 700,\n    \"quantityAvailableForOrder\": 54,\n    \"storage\": {\n        \"city\": {\n            \"deleted\": null,\n            \"id\": 7,\n            \"name\": \"Город 6\"\n        },\n        \"deleted\": null,\n        \"name\": \"Склад 0\",\n        \"id\": 1\n    },\n    \"id\": 1,\n    \"dateCreate\": \"2023-11-27T15:04:11+03:00\",\n    \"dateUpdate\": null,\n    \"deleted\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Update [Модификация]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful PUT request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"{{$randomProduct}}\",\n    \"price\": {{$randomPrice}},\n    \"quantityAvailableForOrder\": \"{{$randomInt}}\",\n    \"storageId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/product/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"product",
+										"1"
+									]
+								},
+								"description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Update [Модификация]",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"{{$randomProduct}}\",\n    \"price\": {{$randomPrice}},\n    \"quantityAvailableForOrder\": \"{{$randomInt}}\",\n    \"storageId\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/product/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"product",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:07:36 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Car\",\n    \"price\": 607.97,\n    \"quantityAvailableForOrder\": 658,\n    \"storage\": {\n        \"city\": {\n            \"deleted\": null,\n            \"id\": 7,\n            \"name\": \"Город 6\"\n        },\n        \"deleted\": null,\n        \"name\": \"Склад 0\",\n        \"id\": 1\n    },\n    \"id\": 2,\n    \"dateCreate\": \"2023-11-27T15:07:36+03:00\",\n    \"dateUpdate\": \"2023-11-27T15:07:36+03:00\",\n    \"deleted\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete [Удаление]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful DELETE request\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/v1/product/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"product",
+										"1"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Delete [Удаление]",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/v1/product/1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"product",
+												"1"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:48:16 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Restore [Восстановление]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Restore successful\", function () {",
+											"    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+											"});",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/v1/product/1/restore",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"v1",
+										"product",
+										"1",
+										"restore"
+									]
+								},
+								"description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+							},
+							"response": [
+								{
+									"name": "[200] Restore [Восстановление]",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/v1/product/1/restore",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"v1",
+												"product",
+												"1",
+												"restore"
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.24.0"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 27 Nov 2023 12:48:51 GMT"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "Content-Type, Authorization"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET,POST,PUT,PATCH,DELETE"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

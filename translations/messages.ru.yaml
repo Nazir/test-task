@@ -1,0 +1,46 @@
+object:
+    not:
+        found: Объект не найден
+    id:
+        not:
+            found: 'Объект "%entity%" c %field%=%id% не найден'
+    is:
+        'null': Объект имеет значение null
+    need:
+        to:
+            mark:
+                for:
+                    deletion: Сначала нужно отметить на удаление
+data:
+    valid:
+        uuid: Значение в поле %name% не соответствует UUID
+record:
+    name:
+        already:
+            exists: Запись с именем %name% уже существует
+        not:
+            value: Поле %name% не должно быть пустым
+    id:
+        not:
+            found: Запись с ID=%id% не существует
+    is:
+        readonly: Нельзя изменить/удалить запись только для чтения
+
+file:
+    not:
+        found: Файл не найден
+    exists: Файл "%filename%" уже существует
+    is:
+        incorrect: Некорректный файл
+        not:
+            readable: Файл "%file%" недоступен для чтения
+    upload:
+        valid: Пожалуйста, загрузите действительный файл
+    zip:
+        create:
+            error: Ошибка создания ZIP-архива
+
+directory:
+    is:
+        not:
+            readable: Каталог "%directory%" недоступен для чтения
