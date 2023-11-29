@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 build() {
+  docker network create nazir-testtask-network
 #   docker-compose --env-file ./compose.env  --file docker-compose.yml up --force-recreate -d  --build
   docker-compose --env-file ./compose.env --file 'docker-compose.dev.yml' up --build --force-recreate --remove-orphans
   docker network create nazir-testtask-network
