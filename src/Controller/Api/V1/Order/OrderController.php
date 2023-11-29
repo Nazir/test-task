@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\Api\Order;
+namespace App\Controller\Api\V1\Order;
 
 use App\Controller\Api\ApiControllerDef;
 use App\Controller\BaseController;
@@ -14,7 +14,7 @@ use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route(path: 'api/v1/order', name: 'api_v1_order')]
-class OrderV1Controller extends BaseController
+class OrderController extends BaseController
 {
     public function __construct(
         private readonly OrderService $service,

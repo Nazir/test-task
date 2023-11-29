@@ -1,23 +1,23 @@
 <?php
 
-namespace App\Controller\Api\Customer;
+namespace App\Controller\Api\V1\Product;
 
 use App\Controller\Api\ApiControllerDef as Def;
 use App\Controller\BaseController;
 use App\Model\Api\ApiResponse;
-use App\Modules\Customer\Dto\CustomerDto;
-use App\Modules\Customer\Model\CustomerList;
-use App\Modules\Customer\Service\CustomerService;
+use App\Modules\Product\Dto\ProductDto;
+use App\Modules\Product\Model\ProductList;
+use App\Modules\Product\Service\ProductService;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Attribute\MapQueryString;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route(path: 'api/v1/customer', name: 'api_v1_customer')]
-class CustomerV1Controller extends BaseController
+#[Route(path: 'api/v1/product', name: 'api_v1_product')]
+class ProductController extends BaseController
 {
     public function __construct(
-        private readonly CustomerService $service,
+        private readonly ProductService $service,
     ) {
     }
 
@@ -29,13 +29,13 @@ class CustomerV1Controller extends BaseController
         name: Def::ROUTE_NAME_LIST,
         methods: Def::ROUTE_METHODS_LIST,
     )]
-    public function list(#[MapQueryString()] CustomerList $list): ApiResponse
+    public function list(#[MapQueryString()] ProductList $list): ApiResponse
     {
         return new ApiResponse(data: $this->service->list(list: $list)());
     }
 
     #[Route(path: '', name: Def::ROUTE_NAME_CREATE, methods: [Request::METHOD_POST])]
-    public function create(#[MapRequestPayload()] CustomerDto $dto): ApiResponse
+    public function create(#[MapRequestPayload()] ProductDto $dto): ApiResponse
     {
         $obj = $this->service->create(dto: $dto);
 
@@ -62,7 +62,7 @@ class CustomerV1Controller extends BaseController
         requirements: Def::ROUTE_REQUIREMENTS_ID,
         methods: Def::ROUTE_METHODS_UPDATE,
     )]
-    public function update(int $id, #[MapRequestPayload()] CustomerDto $dto): ApiResponse
+    public function update(int $id, #[MapRequestPayload()] ProductDto $dto): ApiResponse
     {
         $obj = $this->service->update(objOrObjId: $id, dto: $dto);
 
